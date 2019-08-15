@@ -1,28 +1,4 @@
-# import smtplib ,ssl
-# import csv
-# smtp_server = 'smtp.gmail.com'
-# port =465
-# with open("students_info.csv") as file:
-#     reader = csv.reader(file)
-#     next(reader)  # Skip header rowprint(f"Sending email to {student}")
-#     for student,email,IP1,IP2,IP3,IP4,attendance,first recommendation,reason(1st recommendation),final recommendation,reason(final recommendation) in reader:
-#         print(f"Sending email to {student}")
-# sender ='nancytoniw@gmail.com'
-# password=input('enter your password please: ')
-# receiver='nancyumutoni@yahoo.fr'
-# message="""\
-#     From: {}
-#     To: {}
-#     subject: Attendance Marks
-     
-#     """.format(sender, receiver)
 
-# context = ssl.create_default_context()
-# with smtplib.SMTP_SSL(smtp_server, port, context= context) as server:
-
-#     server.login(sender, password)
-#     server.sendmail(sender, receiver, message)
-#     print('message sent sucessfully')
 import csv, smtplib, ssl
 
 message = """Subject: Your position to move to the next module
